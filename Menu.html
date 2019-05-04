@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Universidad Anáhuac</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/menu.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Universidad</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Menú</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Ingresos</a>
+                </li>                  
+
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Estudiantes</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#homeCSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Calificaciones</a>
+							<ul class="collapse list-unstyled" id="homeCSubmenu">
+								<li>
+									<a href="calificaciones/AltoDesempeno.html"> - Calificaciones por alto desempeño</a>
+								</li>
+								<li>
+									<a href="calificaciones/BajoDesempeno.html"> - Calificaciones por bajo desempeño</a>
+								</li>
+								<li>
+									<a href="#"> - Programa por bajo desempeño </a>
+								</li>
+								<li>
+									<a href="#"> - Calificaciones por género - femenino/masculino </a>
+								</li>
+							</ul>
+                        </li>
+						
+						<li>
+                            <a href="#studentsASubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accesos</a>
+							<ul class="collapse list-unstyled" id="studentsASubmenu">
+								<li>
+									<a href="#studentsAISubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accesos Inicial</a>
+									<ul class="collapse list-unstyled" id="studentsAISubmenu">
+										<li>
+											<a href="#"> - Acceso a tiempo </a>
+										</li>
+										<li>
+											<a href="#"> - Acceso tardío </a>
+										</li>
+										<li>
+											<a href="#"> - Acceso en riesgo moderado </a>
+										</li>
+										<li>
+											<a href="#"> - Acceso en riesgo alto  (en este arranque) </a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#studentsACSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accesos de consumo</a>
+									<ul class="collapse list-unstyled" id="studentsACSubmenu">
+										<li>
+											<a href="#"> - Estudiantes activos </a>
+										</li>
+										<li>
+											<a href="#"> - Estudiantes inactivos </a>
+										</li>
+										<li>
+											<a href="#"> - Acceso por actividad  </a>
+										</li>
+										<li>
+											<a href="#"> - Acceso por foro </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+                        </li>
+						
+						<li>
+                            <a href="#studentsETubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Entrega de tarea</a>
+							<ul class="collapse list-unstyled" id="studentsETubmenu">
+								<li>
+									<a href="#"> - Tiempo por Tarea entregada</a>
+								</li>
+								<li>
+									<a href="#"> - Entrega de tareas</a>
+								</li>
+								<li>
+									<a href="#"> - Tareas a tiempo </a>
+								</li>
+								<li>
+									<a href="#"> - Tareas faltantes </a>
+								</li>
+								<li>
+									<a href="#"> - Tareas atrasadas </a>
+								</li>
+								<li>
+									<a href="#"> - Cursos sin entrega de tareas/faltantes con profesor </a>
+								</li>
+								<li>
+									<a href="#"> - Tareas por género - femenino/masculino </a>
+								</li>
+								<li>
+									<a href="#"> - Tareas con alto desempeño/ mejores calificaciones</a>
+								</li>
+								<li>
+									<a href="#"> - Tareas con bajo desempeño/calificaciones más bajas</a>
+								</li>
+							</ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#MenuProfesores" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Profesores</a>
+                    <ul class="collapse list-unstyled" id="MenuProfesores">
+                        <li>
+                            <a href="#homePSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generales</a>                           
+                        </li>
+                        <li>
+                            <a href="#profesoresASubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accesos de profesores</a>                            
+                        </li>
+                        <li>
+                            <a href="#profesoresETubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Calificaciones</a>                            
+                        </li>
+                        <li>
+                            <a href="#profesoresCPubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Comunicación de Profesores</a>
+                        </li>
+                    </ul>
+                </li>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </nav>
+			
+            <img src="images/Nuevo-logo-color.png" />
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+			$("#homeSubmenu").attr("class","dropdown-toggle");
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

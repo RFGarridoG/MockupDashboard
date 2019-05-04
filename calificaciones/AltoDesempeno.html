@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Universidad Anáhuac</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/calificaciones.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Universidad</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Menú</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Estudiantes</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#homeCSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Calificaciones</a>
+							<ul class="collapse list-unstyled" id="homeCSubmenu">
+								<li>
+									<a href="AltoDesempeno.html"> - Calificaciones por alto desempeño</a>
+								</li>
+								<li>
+									<a href="BajoDesempeno.html"> - Calificaciones por bajo desempeño</a>
+								</li>
+								<li>
+									<a href="#"> - Programa por bajo desempeño </a>
+								</li>
+								<li>
+									<a href="#"> - Calificaciones por género - femenino/masculino </a>
+								</li>
+							</ul>
+                        </li>
+						
+						<li>
+                            <a href="#studentsASubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accesos</a>
+							<ul class="collapse list-unstyled" id="studentsASubmenu">
+								<li>
+									<a href="#studentsAISubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accesos Inicial</a>
+									<ul class="collapse list-unstyled" id="studentsAISubmenu">
+										<li>
+											<a href="#"> - Acceso a tiempo </a>
+										</li>
+										<li>
+											<a href="#"> - Acceso tardío </a>
+										</li>
+										<li>
+											<a href="#"> - Acceso en riesgo moderado </a>
+										</li>
+										<li>
+											<a href="#"> - Acceso en riesgo alto  (en este arranque) </a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#studentsACSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accesos de consumo</a>
+									<ul class="collapse list-unstyled" id="studentsACSubmenu">
+										<li>
+											<a href="#"> - Estudiantes activos </a>
+										</li>
+										<li>
+											<a href="#"> - Estudiantes inactivos </a>
+										</li>
+										<li>
+											<a href="#"> - Acceso por actividad  </a>
+										</li>
+										<li>
+											<a href="#"> - Acceso por foro </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+                        </li>
+						
+						<li>
+                            <a href="#studentsETubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Entrega de tarea</a>
+							<ul class="collapse list-unstyled" id="studentsETubmenu">
+								<li>
+									<a href="#"> - Tiempo por Tarea entregada</a>
+								</li>
+								<li>
+									<a href="#"> - Entrega de tareas</a>
+								</li>
+								<li>
+									<a href="#"> - Tareas a tiempo </a>
+								</li>
+								<li>
+									<a href="#"> - Tareas faltantes </a>
+								</li>
+								<li>
+									<a href="#"> - Tareas atrasadas </a>
+								</li>
+								<li>
+									<a href="#"> - Cursos sin entrega de tareas/faltantes con profesor </a>
+								</li>
+								<li>
+									<a href="#"> - Tareas por género - femenino/masculino </a>
+								</li>
+								<li>
+									<a href="#"> - Tareas con alto desempeño/ mejores calificaciones</a>
+								</li>
+								<li>
+									<a href="#"> - Tareas con bajo desempeño/calificaciones más bajas</a>
+								</li>
+							</ul>
+                        </li>
+                    </ul>
+                </li>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    
+                </div>
+            </nav>
+			<h2>Calificaciones de alto desempeño</h2>
+			</br>
+			<div class="row">
+				<div class="col-6">
+					<select id="reporte" class="form-control" id="exampleFormControlSelect1">
+					  <option value="1">Ciclo escolar actual</option>
+					  <option value="2">Últimos 12 meses</option>
+					  <option value="3">Desde el inicio</option>
+					  <option value="4">Programa</option>
+					  <option value="5">Curso</option>
+					</select>
+				</div>
+				<div id="divtipoprograma" class="col-6" style="display: none">
+					<select id="tipoprograma" class="form-control" id="exampleFormControlSelect1">
+					  <option value="1">Ingenieria en Sistemas</option>
+					  <option value="2">Licenciatura en Ciencias del Ambiente</option>
+                      <option value="3">Licenciatura en Ciencias de de la Educación</option>
+					</select>
+				</div>
+				<div id="divtipocurso" class="col-6" style="display: none">
+					<select id="tipocurso" class="form-control" id="exampleFormControlSelect1">
+					  <option value="1">Curso 1</option>
+					  <option value="2">Curso 2</option>
+					</select>
+				</div>
+			</div>
+			</br>
+			<div id="div1" class="table-responsive">
+				<table class="table dataTable">
+					<thead>
+						<tr>
+							<th>Materia</th>
+							<th>Calificación</th>
+                            <th>Tendencia</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr>
+							<td>Español</td>
+							<td>98</td>
+                            <td><i class="fas fa-exclamation-triangle" style="color:#ffff00"></i></td>
+						</tr>
+						<tr>
+							<td>Geografía</td>
+							<td>96</td>
+                            <td><i class="fas fa-arrow-circle-up" style="color:green"></i></td>
+						</tr>
+                        <tr>
+                            <td>Biología</td>
+                            <td>95</td>
+                            <td><i class="fas fa-window-close" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Diseño</td>
+                            <td>93</td>
+                            <td><i class="fas fa-arrow-circle-up" style="color:green"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Química</td>
+                            <td>91</td>
+                            <td><i class="fas fa-exclamation-triangle" style="color:#ffff00"></i></td>
+                        </tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="div2" class="table-responsive" style="display: none">
+				<table class="table dataTable">
+					<thead>
+						<tr>
+							<th>Materia</th>
+							<th>Calificación</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr>
+							<td>Español</td>
+							<td>97</td>
+						</tr>
+						<tr>
+							<td>Geología</td>
+							<td>96</td>
+						</tr>
+						<tr>
+							<td>Geografía</td>
+							<td>93</td>
+						</tr>
+						<tr>
+							<td>Fisica</td>
+							<td>92</td>
+						</tr>
+						<tr>
+							<td>Artes</td>
+							<td>90</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="div3" class="table-responsive" style="display: none">
+				<table class="table dataTable">
+					<thead>
+						<tr>
+							<th>Materia</th>
+							<th>Calificación</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr>
+							<td>Español</td>
+							<td>98</td>
+						</tr>
+						<tr>
+							<td>Comunicación</td>
+							<td>96</td>
+						</tr>
+						<tr>
+							<td>Administración</td>
+							<td>95</td>
+						</tr>
+						<tr>
+							<td>Negocios</td>
+							<td>93</td>
+						</tr>
+						<tr>
+							<td>Finanzas</td>
+							<td>91</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="div4" class="table-responsive" style="display: none">
+				<table class="table dataTable">
+					<thead>
+						<tr>
+							<th>Materia</th>
+							<th>Calificación</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr>
+							<td>Comunicación</td>
+							<td>100</td>
+						</tr>
+						<tr>
+							<td>Artes visuales</td>
+							<td>99</td>
+						</tr>
+						<tr>
+							<td>Administración</td>
+							<td>97</td>
+						</tr>
+						<tr>
+							<td>Informática</td>
+							<td>90</td>
+						</tr>
+						<tr>
+							<td>Telecomunicaciones</td>
+							<td>89</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="div5" class="table-responsive" style="display: none">
+				<table class="table dataTable">
+					<thead>
+						<tr>
+							<th>Materia</th>
+							<th>Calificación</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr>
+							<td>Ciencias del Ambiente</td>
+							<td>89</td>
+						</tr>
+						<tr>
+							<td>Quimica</td>
+							<td>87</td>
+						</tr>
+						<tr>
+							<td>Costos</td>
+							<td>86</td>
+						</tr>
+						<tr>
+							<td>Proyectos</td>
+							<td>84</td>
+						</tr>
+						<tr>
+							<td>Contabilidad</td>
+							<td>82</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="div6" class="table-responsive" style="display: none">
+				<table class="table dataTable">
+					<thead>
+						<tr>
+							<th>Materia</th>
+							<th>Calificación</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr>
+							<td>Contabilidad </td>
+							<td>100</td>
+						</tr>
+						<tr>
+							<td>Proyectos</td>
+							<td>96</td>
+						</tr>
+						<tr>
+							<td>Costos</td>
+							<td>86</td>
+						</tr>
+						<tr>
+							<td>Artes visuales</td>
+							<td>84</td>
+						</tr>
+						<tr>
+							<td>Geografía</td>
+							<td>82</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="div7" class="table-responsive" style="display: none">
+				<table class="table dataTable">
+					<thead>
+						<tr>
+							<th>Materia</th>
+							<th>Calificación</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr>
+							<td>Frances</td>
+							<td>99</td>
+						</tr>
+						<tr>
+							<td>Ingles</td>
+							<td>95</td>
+						</tr>
+						<tr>
+							<td>Aleman</td>
+							<td>86</td>
+						</tr>
+						<tr>
+							<td>Chino</td>
+							<td>84</td>
+						</tr>
+						<tr>
+							<td>Japones</td>
+							<td>82</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+			$("#homeSubmenu").attr("class","dropdown-toggle");
+			$("#homeCSubmenu").attr("class","dropdown-toggle");
+			
+			$("#reporte").on('change', function() {
+				var value = this.value;
+				$("#div1").hide();
+				$("#div2").hide();
+				$("#div3").hide();
+				$("#div4").hide();
+				$("#div5").hide();
+				$("#div6").hide();
+				$("#div7").hide();
+				$("#divtipoprograma").hide();
+				$("#divtipocurso").hide();
+				
+				if(value == 1 || value == 2 || value == 3 ){
+					$("#div"+this.value).show();
+				} else if (value == 4) {
+					$("#divtipoprograma").show();
+					$("#div4").show();
+				} else if (value == 5) {
+					$("#divtipocurso").show();
+					$("#div6").show();
+				}
+			});
+			$("#tipoprograma").on('change', function() {
+				var value = this.value;
+				$("#div1").hide();
+				$("#div2").hide();
+				$("#div3").hide();
+				$("#div4").hide();
+				$("#div5").hide();
+				$("#div6").hide();
+				$("#div7").hide();
+				if(value == 1 ){
+					$("#div4").show();
+				} else if (value == 2) {
+					$("#div5").show();
+				}
+			});
+			
+			$("#tipocurso").on('change', function() {
+				var value = this.value;
+				$("#div1").hide();
+				$("#div2").hide();
+				$("#div3").hide();
+				$("#div4").hide();
+				$("#div5").hide();
+				$("#div6").hide();
+				$("#div7").hide();
+				if(value == 1 ){
+					$("#div6").show();
+				} else if (value == 2) {
+					$("#div7").show();
+				}
+			});
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
